@@ -1,0 +1,84 @@
+* {
+  font-family: "Satoshi";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #323131;
+}
+
+.header {
+  color: #fff;
+  padding: 10px;
+  background-color: rgba(157, 71, 255, 0.5);
+}
+
+nav {
+  padding: 10px;
+  background-color: rgba(157, 71, 255, 0.5);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  color: #fff;
+  display: flex;
+  list-style: none;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 22px;
+  z-index: 200;
+}
+
+a {
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.452);
+}
+
+a:hover {
+  color: #fff;
+}
+
+.main {
+  display: flex;
+  color: white;
+  font-size: 22px;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.skills {
+  display: flex;
+  color: white;
+  font-size: 22px;
+  justify-content: center;
+  position: relative;
+  left: 0;
+}
+
+.skills p {
+  font-weight: 600;
+}
+.skills img {
+  margin-left: 5px;
+}
+
+.about {
+  display: flex;
+  color: white;
+  font-size: 22px;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
