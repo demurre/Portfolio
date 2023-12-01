@@ -10,12 +10,6 @@ body {
   background-color: #323131;
 }
 
-.header {
-  color: #fff;
-  padding: 10px;
-  background-color: rgba(157, 71, 255, 0.5);
-}
-
 nav {
   padding: 10px;
   background-color: rgba(157, 71, 255, 0.5);
@@ -62,13 +56,14 @@ a:hover {
   justify-content: center;
   position: relative;
   left: 0;
-}
 
-.skills p {
-  font-weight: 600;
-}
-.skills img {
-  margin-left: 5px;
+  p {
+    font-weight: 600;
+  }
+
+  img {
+    margin-left: 5px;
+  }
 }
 
 .about {
@@ -81,4 +76,38 @@ a:hover {
   align-items: center;
   height: 100vh;
   width: 100%;
+}
+
+.projects {
+  display: flex;
+  color: white;
+  font-size: 22px;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+
+.projectItem {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(157, 71, 255, 0.5);
+  padding: 12px;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.projectText {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+  width: 30rem;
+}
+
+.projectVid {
+  border-radius: 1.7rem;
 }
