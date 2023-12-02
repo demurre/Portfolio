@@ -5,6 +5,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
 import "../App.css";
 import projects from "../assets/projects";
+import VideoComponent from "../components/VideoComponent";
 
 const MainPage = () => {
   return (
@@ -40,7 +41,7 @@ const MainPage = () => {
           <p></p>
           <p>
             Languages: <br />
-            Ukrainian: Native <br /> English: B2
+            Ukrainian: Native <br /> English: B1
           </p>
           <p>
             Tech Skills:
@@ -51,44 +52,36 @@ const MainPage = () => {
         </div>
       </section>
       <section id="projects" className="projects">
-        <div>
-          <h3>Projects</h3>
-          <div>
-            {projects.map((project, index) => (
-              <div key={index} className="projectItem">
-                <div className="projectVid">
-                  <video width="320" height="240" controls>
-                    <source src={project.preview} type="video/mp4" />
-                  </video>
-                </div>
-                <div className="projectText">
-                  <h3>{project.name}</h3>
-                  <p>{project.description}</p>
-                  <p>
-                    Tech Stack: <img src={project.stack} alt="Tech Stack" />
-                  </p>
-                  <p>
-                    <a
-                      href={project.code}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Code <GitHubIcon />
-                    </a>
-                    |
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Demo <LaunchIcon />
-                    </a>
-                  </p>
-                </div>
-              </div>
-            ))}
+        <h3>Projects</h3>
+        {projects.map((project, index) => (
+          <div key={index} className="projectItem">
+            <VideoComponent videoSource={project.preview} />
+            <div className="projectInfo">
+              <h3>{project.name}</h3>
+              <p>{project.description}</p>
+              <p>
+                Tech Stack: <img src={project.stack} alt="Tech Stack" />
+              </p>
+              <p>
+                <a
+                  href={project.code}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Code <GitHubIcon />
+                </a>
+                |
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Demo <LaunchIcon />
+                </a>
+              </p>
+            </div>
           </div>
-        </div>
+        ))}
       </section>
       <section id="contact" className="contact"></section>
     </>
