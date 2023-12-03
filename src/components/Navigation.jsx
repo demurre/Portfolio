@@ -15,7 +15,7 @@ const Navigation = () => {
 
   return (
     <header>
-      <h3>Yarik</h3>
+      <h3>🇺🇦</h3>
       <nav ref={navRef}>
         <a href="#home">Home</a>
         <a href="#about">About</a>

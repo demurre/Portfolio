@@ -6,6 +6,7 @@ import LaunchIcon from "@mui/icons-material/Launch";
 import "../App.css";
 import projects from "../assets/projects";
 import VideoComponent from "../components/VideoComponent";
+import ContactMe from "../components/ContactMe";
 
 const MainPage = () => {
   return (
@@ -44,9 +45,9 @@ const MainPage = () => {
             Ukrainian: Native <br /> English: B1
           </p>
           <p>
-            Tech Skills:
+            Tech Skills
             <img src="https://skillicons.dev/icons?i=html,css,js,react,mongodb" />
-            <br /> Tools:
+            <br /> Tools
             <img src="https://skillicons.dev/icons?i=git,github,aws,figma,materialui" />
           </p>
         </div>
@@ -60,7 +61,7 @@ const MainPage = () => {
               <h3>{project.name}</h3>
               <p>{project.description}</p>
               <p>
-                Tech Stack: <img src={project.stack} alt="Tech Stack" />
+                Tech Stack <img src={project.stack} alt="Tech Stack" />
               </p>
               <p>
                 <a
@@ -83,7 +84,9 @@ const MainPage = () => {
           </div>
         ))}
       </section>
-      <section id="contact" className="contact"></section>
+      <section id="contact" className="contact">
+        <ContactMe />
+      </section>
     </>
   );
 };

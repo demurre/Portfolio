@@ -124,7 +124,6 @@ a:hover {
   background: #181818d4;
   padding: 12px;
   border-radius: 5px;
-  margin: 0 auto;
   margin-bottom: 16px;
   max-width: 2000px;
 }
@@ -136,6 +135,7 @@ a:hover {
   justify-content: center;
   text-align: center;
   width: 30rem;
+  /* padding-top: 40px; */
 }
 
 .videoContent {
@@ -151,6 +151,71 @@ a:hover {
   justify-content: center;
   align-items: center;
   align-content: center;
+}
+
+.contact {
+  display: flex;
+  color: white;
+  font-size: 22px;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.contact-items {
+  width: 25%;
+}
+
+.form-control {
+  width: 100%;
+  display: block;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 5px;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+.btn {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 5px;
+  color: #3c4043;
+  cursor: pointer;
+  font-size: 14px;
+  height: 36px;
+  line-height: 27px;
+  min-width: 54px;
+  padding: 0 16px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: pre;
+  margin-top: 16px;
+  width: 100%;
+}
+
+.btn:hover {
+  border-color: #dadce0;
+  box-shadow: rgba(255, 254, 254, 0.25) 0px 8px 15px;
+  transform: translateY(-2px);
+  color: #202124;
+}
+
+.btn:focus {
+  border-color: #dadce0;
+  outline: none;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -198,5 +263,9 @@ a:hover {
 
   .videoContent {
     width: 100%;
+  }
+
+  .contact-items {
+    width: 50%;
   }
 }
