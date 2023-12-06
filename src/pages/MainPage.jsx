@@ -40,15 +40,15 @@ const MainPage = () => {
           <h3>About me</h3>
           <p>
             I'm Yarik - React Front-end Developer,
-            <br /> glad to increase my skills!
+            <br /> glad to improve my skills!
           </p>
           <h4>Languages:</h4>
           <p>
             Ukrainian: Native <br /> English: B1
           </p>
-          <h4>Tech Skills</h4>
+          <h4>Tech Skills:</h4>
           <img src="https://skillicons.dev/icons?i=html,css,js,react,mongodb" />
-          <h4>Tools</h4>
+          <h4>Tools:</h4>
           <img src="https://skillicons.dev/icons?i=git,github,figma,materialui,vercel" />
         </div>
       </section>
@@ -61,7 +61,7 @@ const MainPage = () => {
               <h3>{project.name}</h3>
               <p>{project.description}</p>
               <p>
-                Tech Stack <img src={project.stack} alt="Tech Stack" />
+                Tech Stack: <img src={project.stack} alt="Tech Stack" />
               </p>
               <p>
                 <a
