@@ -35,7 +35,7 @@ const MainPage = () => {
           </p>
         </div>
       </section>
-      <section id="about" className="about">
+      <section id="about" className="main">
         <div>
           <h3>About me</h3>
           <p>
@@ -84,7 +84,7 @@ const MainPage = () => {
           </div>
         ))}
       </section>
-      <section id="contact" className="contact">
+      <section id="contact" className="main">
         <ContactMe />
       </section>
     </>

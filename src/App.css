@@ -91,18 +91,6 @@ a:hover {
   }
 }
 
-.about {
-  display: flex;
-  color: white;
-  font-size: 22px;
-  justify-content: center;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
-}
-
 .projects {
   display: flex;
   color: white;
@@ -153,18 +141,6 @@ a:hover {
   align-content: center;
 }
 
-.contact {
-  display: flex;
-  color: white;
-  font-size: 22px;
-  justify-content: center;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
-}
-
 .contact-items {
   width: 25%;
 }
@@ -176,9 +152,11 @@ a:hover {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  background-color: #fff;
-  background-clip: padding-box;
   border-radius: 5px;
+  background: none;
+  outline: none;
+  color: #f8f9fa;
+  margin-bottom: 16px;
 }
 
 textarea {
@@ -202,7 +180,6 @@ textarea {
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: pre;
-  margin-top: 16px;
   width: 100%;
 }
 
