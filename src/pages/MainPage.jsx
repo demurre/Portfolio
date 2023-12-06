@@ -38,18 +38,18 @@ const MainPage = () => {
       <section id="about" className="about">
         <div>
           <h3>About me</h3>
-          <h4>React Front-end Developer</h4>
-          <p></p>
           <p>
-            Languages: <br />
+            I'm Yarik - React Front-end Developer,
+            <br /> glad to increase my skills!
+          </p>
+          <h4>Languages:</h4>
+          <p>
             Ukrainian: Native <br /> English: B1
           </p>
-          <p>
-            Tech Skills
-            <img src="https://skillicons.dev/icons?i=html,css,js,react,mongodb" />
-            <br /> Tools
-            <img src="https://skillicons.dev/icons?i=git,github,aws,figma,materialui" />
-          </p>
+          <h4>Tech Skills</h4>
+          <img src="https://skillicons.dev/icons?i=html,css,js,react,mongodb" />
+          <h4>Tools</h4>
+          <img src="https://skillicons.dev/icons?i=git,github,figma,materialui,vercel" />
         </div>
       </section>
       <section id="projects" className="projects">
