@@ -47,7 +47,7 @@ const MainPage = () => {
             Ukrainian: Native <br /> English: B1
           </p>
           <h4>Tech Skills:</h4>
-          <img src="https://skillicons.dev/icons?i=html,css,js,react,mongodb" />
+          <img src="https://skillicons.dev/icons?i=html,css,tailwind,js,react" />
           <h4>Tools:</h4>
           <img src="https://skillicons.dev/icons?i=git,github,figma,materialui,vercel" />
         </div>

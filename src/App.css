@@ -1,3 +1,5 @@
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+
 * {
   font-family: "Satoshi";
   margin: 0;
@@ -122,8 +124,8 @@ a:hover {
   height: auto;
   justify-content: center;
   text-align: center;
-  width: 30rem;
-  padding-top: 35px;
+  max-width: 30rem;
+  padding-top: 10px;
 }
 
 .videoContent {
