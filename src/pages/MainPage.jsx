@@ -13,10 +13,14 @@ const MainPage = () => {
     <>
       <Navigation />
       <section id="home" className="main">
-        <h1>
-          Hi there 👋 <br />
-          I'm Yarik - React Frontend Developer
-        </h1>
+        <h1>Hi there 👋</h1>
+        <h1>I'm Yarik - React Frontend Developer</h1>
+        <div className="skills">
+          <p>
+            Tech Skills
+            <img src="https://skillicons.dev/icons?i=html,css,js,react" />
+          </p>
+        </div>
         <span>
           <a
             href="https://www.linkedin.com/in/yaroslav-drozdov-26402928a/"
@@ -28,12 +32,6 @@ const MainPage = () => {
             <GitHubIcon fontSize="large" />
           </a>
         </span>
-        <div className="skills">
-          <p>
-            Tech Skills
-            <img src="https://skillicons.dev/icons?i=html,css,js,react" />
-          </p>
-        </div>
       </section>
       <section id="about" className="main">
         <div>
