@@ -12,29 +12,34 @@ const MainPage = () => {
   return (
     <>
       <Navigation />
+
       <section id="home" className="main">
-        <h1>Hi there 👋</h1>
-        <h1>I'm Yarik - React Frontend Developer</h1>
-        <div className="skills">
-          <p>
-            Tech Skills
-            <img src="https://skillicons.dev/icons?i=html,css,js,react" />
-          </p>
+        <div className="content">
+          <img className="avatar" src="src/assets/avatar.jpg" alt="avatar" />
+          <div className="text-content">
+            <h1>Hi there 👋</h1>
+            <h1>I'm Yarik - React Frontend Developer</h1>
+            <img
+              className="skills"
+              src="https://skillicons.dev/icons?i=html,css,js,react"
+            />
+            <span>
+              <a
+                href="https://www.linkedin.com/in/yaroslav-drozdov-26402928a/"
+                className="icon-link"
+              >
+                <LinkedInIcon fontSize="large" />
+              </a>
+              <a href="https://github.com/demurre" className="icon-link">
+                <GitHubIcon fontSize="large" />
+              </a>
+            </span>
+          </div>
         </div>
-        <span>
-          <a
-            href="https://www.linkedin.com/in/yaroslav-drozdov-26402928a/"
-            className="icon-link"
-          >
-            <LinkedInIcon fontSize="large" />
-          </a>
-          <a href="https://github.com/demurre" className="icon-link">
-            <GitHubIcon fontSize="large" />
-          </a>
-        </span>
       </section>
+
       <section id="about" className="main">
-        <div>
+        <div className="about">
           <h3>About me</h3>
           <p>
             I'm Yarik - React Front-end Developer,
@@ -50,6 +55,7 @@ const MainPage = () => {
           <img src="https://skillicons.dev/icons?i=git,github,figma,materialui,vercel" />
         </div>
       </section>
+
       <section id="projects" className="projects">
         <h3>Projects</h3>
         {projects.map((project, index) => (
@@ -82,6 +88,7 @@ const MainPage = () => {
           </div>
         ))}
       </section>
+
       <section id="contact" className="main">
         <ContactMe />
       </section>

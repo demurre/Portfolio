@@ -1,31 +1,18 @@
-import React, { useRef } from "react";
+import React from "react";
 
 const VideoComponent = ({ videoSource }) => {
-  const videoRef = useRef(null);
-
-  const handleMouseEnter = () => {
-    videoRef.current.play();
-  };
-
-  const handleMouseLeave = () => {
-    videoRef.current.pause();
-  };
+  const iframeRef = React.useRef(null);
 
   return (
-    <div
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      className="videoContentContainer"
-    >
-      <video
-        ref={videoRef}
-        controls={false}
-        loop
-        muted
+    <div className="videoContentContainer">
+      <iframe
+        ref={iframeRef}
+        src={videoSource}
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
         className="videoContent"
-      >
-        <source src={videoSource} type="video/mp4" />
-      </video>
+      ></iframe>
     </div>
   );
 };
