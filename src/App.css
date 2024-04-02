@@ -256,8 +256,6 @@ textarea {
 
   header .responsive_nav {
     transform: translateY(100vh);
-    background: transparent;
-    backdrop-filter: blur(25px);
   }
 
   nav .nav-close-btn {
