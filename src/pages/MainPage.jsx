@@ -15,7 +15,7 @@ const MainPage = () => {
 
       <section id="home" className="main">
         <div className="content">
-          <img className="avatar" src="src/assets/avatar.jpg" alt="avatar" />
+          <img className="avatar" src="/avatar.jpg" alt="avatar" />
           <div className="text-content">
             <h1>Hi there 👋</h1>
             <h1>I'm Yarik - React Frontend Developer</h1>
