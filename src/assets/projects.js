@@ -19,7 +19,8 @@ export default [
   },
   {
     name: "Journal",
-    description: "Journal where you can add/edit/delete notes, create user",
+    description:
+      "A journal where you can add/edit/delete notes, create users that will be stored in local storage",
     stack: "https://skillicons.dev/icons?i=react,css",
     code: "https://github.com/demurre/Journal",
     demo: "https://journal-on-react.vercel.app/",

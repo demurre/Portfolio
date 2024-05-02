@@ -1,11 +1,10 @@
 import "../App.css";
-import Navigation from "../components/Navigation";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import LaunchIcon from "@mui/icons-material/Launch";
+import Navigation from "../components/Navigation/Navigation";
 import projects from "../assets/projects";
-import VideoComponent from "../components/VideoComponent";
-import ContactMe from "../components/ContactMe";
+import ContactMe from "../components/ContactMe/ContactMe";
+import Projects from "../components/Projects/Projects";
 
 const MainPage = () => {
   return (
@@ -41,8 +40,10 @@ const MainPage = () => {
         <div className="about">
           <h3>About me</h3>
           <p>
-            I'm Yarik - React Frontend Developer,
-            <br /> glad to improve my skills!
+            I'm Yarik - React Frontend Developer, currently studying in Dnipro
+            University of Technology. Have experience with crafting UI mockups
+            in Figma and develop them. Look forward to gaining more experience
+            and improving my skills!
           </p>
           <h4>Languages:</h4>
           <p>
@@ -51,41 +52,12 @@ const MainPage = () => {
           <h4>Tech Skills:</h4>
           <img src="https://skillicons.dev/icons?i=html,css,tailwind,js,react" />
           <h4>Tools:</h4>
-          <img src="https://skillicons.dev/icons?i=git,github,figma,materialui,vercel" />
+          <img src="https://skillicons.dev/icons?i=git,github,figma,materialui,vercel,vite" />
         </div>
       </section>
 
       <section id="projects" className="projects">
-        <h3>Projects</h3>
-        {projects.map((project, index) => (
-          <div key={index} className="projectItem">
-            <VideoComponent videoSource={project.preview} />
-            <div className="projectInfo">
-              <h3>{project.name}</h3>
-              <p>{project.description}</p>
-              <p>
-                Tech Stack: <img src={project.stack} alt="Tech Stack" />
-              </p>
-              <p>
-                <a
-                  href={project.code}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Code <GitHubIcon />
-                </a>
-                |
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Demo <LaunchIcon />
-                </a>
-              </p>
-            </div>
-          </div>
-        ))}
+        <Projects projects={projects} />
       </section>
 
       <section id="contact" className="main">

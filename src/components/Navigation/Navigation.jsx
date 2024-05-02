@@ -1,3 +1,4 @@
+import "./Navigation.css";
 import { useRef } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import DehazeIcon from "@mui/icons-material/Dehaze";
