@@ -1,9 +1,8 @@
-import React from "react";
+import "../App.css";
 import Navigation from "../components/Navigation";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
-import "../App.css";
 import projects from "../assets/projects";
 import VideoComponent from "../components/VideoComponent";
 import ContactMe from "../components/ContactMe";
@@ -42,7 +41,7 @@ const MainPage = () => {
         <div className="about">
           <h3>About me</h3>
           <p>
-            I'm Yarik - React Front-end Developer,
+            I'm Yarik - React Frontend Developer,
             <br /> glad to improve my skills!
           </p>
           <h4>Languages:</h4>

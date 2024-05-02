@@ -9,7 +9,8 @@
 }
 
 body {
-  background-color: #323131;
+  background-color: #2f2f2f;
+  color: #ececec;
 }
 
 header {
@@ -19,7 +20,7 @@ header {
   background-color: #181818d4;
   position: fixed;
   width: 100%;
-  color: #fff;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -34,7 +35,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #fff;
+  color: #ececec;
 }
 
 header .nav-btn {
@@ -43,7 +44,7 @@ header .nav-btn {
   background: transparent;
   border: none;
   outline: none;
-  color: #fff;
+
   visibility: hidden;
   opacity: 0;
   font-size: 1.8rem;
@@ -63,12 +64,12 @@ a {
 }
 
 a:hover {
-  color: #fff;
+  color: #ececec;
 }
 
 .main {
   display: flex;
-  color: #fff;
+
   font-size: 22px;
   justify-content: center;
   position: relative;
@@ -113,7 +114,6 @@ a:hover {
 
 .skills {
   display: flex;
-  color: #fff;
   font-size: 22px;
   position: relative;
   width: 200px;
@@ -132,7 +132,6 @@ a:hover {
 
 .projects {
   display: flex;
-  color: #fff;
   font-size: 22px;
   justify-content: center;
   position: relative;
@@ -151,7 +150,7 @@ a:hover {
   background: #181818d4;
   padding: 12px;
   border-radius: 5px;
-  margin-bottom: 16px;
+  margin-top: 16px;
   max-width: 2000px;
 }
 
@@ -206,12 +205,12 @@ textarea {
 }
 
 .btn {
-  background: linear-gradient(to right, #dadce0 50%, #f8f9fa 50%);
+  background: linear-gradient(to right, #dadce0 50%, #ececec 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.4s ease-in-out;
-  background-color: #f8f9fa;
-  border: 1px solid #f8f9fa;
+  background-color: #ececec;
+  border: 1px solid #ececec;
   border-radius: 5px;
   color: #3c4043;
   cursor: pointer;
@@ -237,6 +236,7 @@ textarea {
   header .nav-btn {
     visibility: visible;
     opacity: 1;
+    color: #ececec;
   }
 
   header nav {
@@ -259,6 +259,7 @@ textarea {
   }
 
   nav .nav-close-btn {
+    color: #ececec;
     position: absolute;
     top: 2rem;
     right: 2rem;

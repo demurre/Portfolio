@@ -18,12 +18,12 @@ export default [
     preview: "https://www.youtube.com/embed/5Z_bfX9rJog?si=lj_i1XEl-NQZ1iYW",
   },
   {
-    name: "ToDoList",
-    description: "ToDoList where you can add, mark, edit, delete tasks.",
+    name: "Journal",
+    description: "Journal where you can add/edit/delete notes, create user",
     stack: "https://skillicons.dev/icons?i=react,css",
-    code: "https://github.com/demurre/ToDoList",
-    demo: "https://to-do-list-demurre.vercel.app/",
-    preview: "https://www.youtube.com/embed/r5sz3ylPLF8?si=bWU3WEp4lhYmbCZR",
+    code: "https://github.com/demurre/Journal",
+    demo: "https://journal-on-react.vercel.app/",
+    preview: "https://www.youtube.com/embed/VJMJ7k1jqhE?si=je7oYm9EP2SZgSGK",
   },
   {
     name: "MusicApp",
