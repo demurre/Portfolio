@@ -1,13 +1,14 @@
 import "./Projects.css";
 import VideoComponent from "../VideoComponent/VideoComponent";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LaunchIcon from "@mui/icons-material/Launch";
+
 import projects from "../../assets/projects";
+import { ExportOutlined, GithubFilled } from "@ant-design/icons";
 
 const Projects = () => {
   return (
-    <section id="projects" className="projects">
+    <>
       <h3>Projects</h3>
+
       {projects.map((project, index) => (
         <div key={index} className="projectItem">
           <VideoComponent videoSource={project.preview} />
@@ -15,21 +16,22 @@ const Projects = () => {
             <h3>{project.name}</h3>
             <p>{project.description}</p>
             <p>
-              Tech Stack: <img src={project.stack} alt="Tech Stack" />
+              Tech Stack: <br />
+              <img src={project.stack} alt="Tech Stack" />
             </p>
             <p>
               <a href={project.code} target="_blank" rel="noopener noreferrer">
-                Code <GitHubIcon />
+                Code <GithubFilled />
               </a>
               |
               <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                Demo <LaunchIcon />
+                Demo <ExportOutlined />
               </a>
             </p>
           </div>
         </div>
       ))}
-    </section>
+    </>
   );
 };
 

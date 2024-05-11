@@ -1,10 +1,9 @@
 import "../App.css";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import Navigation from "../components/Navigation/Navigation";
 import projects from "../assets/projects";
 import ContactMe from "../components/ContactMe/ContactMe";
 import Projects from "../components/Projects/Projects";
+import { GithubFilled, LinkedinFilled } from "@ant-design/icons";
 
 const MainPage = () => {
   return (
@@ -26,10 +25,10 @@ const MainPage = () => {
                 href="https://www.linkedin.com/in/yaroslav-drozdov-26402928a/"
                 className="icon-link"
               >
-                <LinkedInIcon fontSize="large" />
+                <LinkedinFilled style={{ fontSize: "30px", padding: "4px" }} />
               </a>
               <a href="https://github.com/demurre" className="icon-link">
-                <GitHubIcon fontSize="large" />
+                <GithubFilled style={{ fontSize: "30px", padding: "4px" }} />
               </a>
             </span>
           </div>

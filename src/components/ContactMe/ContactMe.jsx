@@ -1,60 +1,90 @@
 import "./ContactMe.css";
-import { useState } from "react";
+import { Button } from "antd";
+import { Form } from "antd";
+import { useForm } from "antd/es/form/Form";
 
 const ContactMe = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
+  const [form] = useForm();
 
-  const handleSendClick = () => {
+  const onFinish = (values) => {
+    const { name, email, subject, message } = values;
     const bodyMessage = `Name: ${name} Email: ${email} Message: ${message}`;
     const mailtoLink = `mailto:y.drozdov130705@gmail.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(bodyMessage)}`;
-
     window.location.href = mailtoLink;
   };
 
   return (
-    <div className="contact-items">
+    <Form form={form} onFinish={onFinish}>
       <h3>Contact Me</h3>
-      <input
-        className="form-control"
-        type="text"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        placeholder="Your Name"
-      />
 
-      <input
-        className="form-control"
-        type="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder="Your Email"
-      />
+      <Form.Item
+        name="name"
+        rules={[{ required: true, message: "Please enter your name" }]}
+      >
+        <div className="label-input">
+          <input
+            className="form-control"
+            id="name-input"
+            type="text"
+            required
+          />
+          <label htmlFor="name-input">Name</label>
+        </div>
+      </Form.Item>
 
-      <input
-        className="form-control"
-        type="text"
-        value={subject}
-        onChange={(e) => setSubject(e.target.value)}
-        placeholder="Subject"
-      />
+      <Form.Item
+        name="email"
+        rules={[{ required: true, message: "Please enter your email" }]}
+      >
+        <div className="label-input">
+          <input
+            className="form-control"
+            type="email"
+            id="email-input"
+            required
+          />
+          <label htmlFor="email-input">Email</label>
+        </div>
+      </Form.Item>
 
-      <textarea
-        className="form-control"
-        type="text"
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-        placeholder="Message"
-      ></textarea>
+      <Form.Item
+        name="subject"
+        rules={[{ required: true, message: "Please enter the subject" }]}
+      >
+        <div className="label-input">
+          <input
+            className="form-control"
+            type="text"
+            id="subject-input"
+            required
+          />
+          <label htmlFor="subject-input">Subject</label>
+        </div>
+      </Form.Item>
 
-      <button className="btn" onClick={handleSendClick}>
-        Send
-      </button>
-    </div>
+      <Form.Item
+        name="message"
+        rules={[{ required: true, message: "Please enter your message" }]}
+      >
+        <div className="label-input">
+          <textarea
+            className="form-control"
+            id="message-input"
+            type="text"
+            required
+          />
+          <label htmlFor="message-input">Message</label>
+        </div>
+      </Form.Item>
+
+      <Form.Item>
+        <Button type="default" htmlType="submit" block>
+          Send
+        </Button>
+      </Form.Item>
+    </Form>
   );
 };
 

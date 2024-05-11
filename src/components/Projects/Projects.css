@@ -1,30 +1,24 @@
 .projects {
   display: flex;
   font-size: 22px;
-  justify-content: center;
   position: relative;
   flex-direction: column;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 80px;
 }
 
 .projectItem {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: flex-start;
   background: #181818d4;
   padding: 12px;
-  border-radius: 5px;
+  border-radius: 6px;
   margin-top: 16px;
 }
 
 .projectInfo {
   display: flex;
   flex-direction: column;
-  height: auto;
   justify-content: center;
   text-align: center;
   max-width: 30rem;

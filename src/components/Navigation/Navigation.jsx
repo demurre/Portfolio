@@ -1,7 +1,6 @@
+import { CloseOutlined, MenuOutlined } from "@ant-design/icons";
 import "./Navigation.css";
 import { useRef } from "react";
-import CloseIcon from "@mui/icons-material/Close";
-import DehazeIcon from "@mui/icons-material/Dehaze";
 
 const Navigation = () => {
   const navRef = useRef();
@@ -23,11 +22,11 @@ const Navigation = () => {
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
         <button className="nav-btn nav-close-btn" onClick={hideNavbar}>
-          <CloseIcon />
+          <CloseOutlined style={{ fontSize: "22px" }} />
         </button>
       </nav>
       <button className="nav-btn" onClick={showNavbar}>
-        <DehazeIcon />
+        <MenuOutlined style={{ fontSize: "22px", padding: "8px" }} />
       </button>
     </header>
   );
