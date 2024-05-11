@@ -2,7 +2,7 @@ export default [
   {
     name: "NeonPeakChronicles",
     description:
-      "CCG RogueLike web game in which the player interacts with objects and game memorizes their actions.",
+      "CCG RogueLike web game in which the player interacts with objects and game memorises their actions.",
     stack: "https://skillicons.dev/icons?i=js",
     code: "https://github.com/demurre/NeonPeakChronicles",
     demo: "https://neon-peak-chronicles.vercel.app/",
@@ -32,7 +32,7 @@ export default [
   {
     name: "MusicApp",
     description:
-      "Tracks takes from AWS. App realize search function, a playbar where you can control the track time/volume, play/pause buttons.",
+      "Tracks taken from AWS. App realises search function, a playbar where you can control the track time/volume, play/pause buttons.",
     stack: "https://skillicons.dev/icons?i=react,css",
     code: "https://github.com/demurre/MusicApp",
     demo: "https://music-app-demurre.vercel.app/",
