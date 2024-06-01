@@ -1,7 +1,7 @@
 import "./Projects.css";
 import VideoComponent from "../VideoComponent/VideoComponent";
 
-import projects from "../../assets/projects";
+import { projects } from "../../assets/assets";
 import { ExportOutlined, GithubFilled } from "@ant-design/icons";
 
 const Projects = () => {
@@ -17,7 +17,9 @@ const Projects = () => {
             <p>{project.description}</p>
             <p>
               Tech Stack: <br />
-              <img src={project.stack} alt="Tech Stack" />
+              {project.stack.map((link, index) => (
+                <img key={index} src={link} alt="Tech Stack" />
+              ))}
             </p>
             <p>
               <a href={project.code} target="_blank" rel="noopener noreferrer">
