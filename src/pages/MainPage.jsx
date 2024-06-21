@@ -48,13 +48,23 @@ const MainPage = () => {
           <h4>Tech Skills:</h4>
           <div>
             {skills.map((skill, index) => (
-              <img key={index} src={skill} alt={`Skill ${index + 1}`} />
+              <img
+                className="skill-item"
+                key={index}
+                src={skill}
+                alt={`Skill ${index + 1}`}
+              />
             ))}
           </div>
           <h4>Tools:</h4>
           <div>
             {tools.map((tool, index) => (
-              <img key={index} src={tool} alt={`Tool ${index + 1}`} />
+              <img
+                className="skill-item"
+                key={index}
+                src={tool}
+                alt={`Tool ${index + 1}`}
+              />
             ))}
           </div>
         </div>

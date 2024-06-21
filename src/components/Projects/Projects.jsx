@@ -18,7 +18,12 @@ const Projects = () => {
             <p>
               Tech Stack: <br />
               {project.stack.map((link, index) => (
-                <img key={index} src={link} alt="Tech Stack" />
+                <img
+                  className="skill-item"
+                  key={index}
+                  src={link}
+                  alt="Tech Stack"
+                />
               ))}
             </p>
             <p>
