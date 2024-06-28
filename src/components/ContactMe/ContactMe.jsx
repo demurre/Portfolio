@@ -1,4 +1,4 @@
-import "./ContactMe.css";
+import styles from "./ContactMe.module.css";
 import { Button } from "antd";
 import { Form } from "antd";
 import { useForm } from "antd/es/form/Form";
@@ -23,14 +23,14 @@ const ContactMe = () => {
         name="name"
         rules={[{ required: true, message: "Please enter your name" }]}
       >
-        <div className="label-input">
+        <div className={styles.label_input}>
           <input
-            className="form-control"
+            className={styles.form_control}
             id="name-input"
             type="text"
             required
           />
-          <label htmlFor="name-input">Name</label>
+          <label htmlFor="name_input">Name</label>
         </div>
       </Form.Item>
 
@@ -38,9 +38,9 @@ const ContactMe = () => {
         name="email"
         rules={[{ required: true, message: "Please enter your email" }]}
       >
-        <div className="label-input">
+        <div className={styles.label_input}>
           <input
-            className="form-control"
+            className={styles.form_control}
             type="email"
             id="email-input"
             required
@@ -53,9 +53,9 @@ const ContactMe = () => {
         name="subject"
         rules={[{ required: true, message: "Please enter the subject" }]}
       >
-        <div className="label-input">
+        <div className={styles.label_input}>
           <input
-            className="form-control"
+            className={styles.form_control}
             type="text"
             id="subject-input"
             required
@@ -68,9 +68,9 @@ const ContactMe = () => {
         name="message"
         rules={[{ required: true, message: "Please enter your message" }]}
       >
-        <div className="label-input">
+        <div className={styles.label_input}>
           <textarea
-            className="form-control"
+            className={styles.form_control}
             id="message-input"
             type="text"
             required
@@ -80,7 +80,7 @@ const ContactMe = () => {
       </Form.Item>
 
       <Form.Item>
-        <Button type="default" htmlType="submit" block>
+        <Button type="primary" htmlType="submit" block>
           Send
         </Button>
       </Form.Item>

@@ -1,25 +1,23 @@
-import { ConfigProvider } from "antd";
-import "./App.css";
-import MainPage from "./pages/MainPage";
-import { theme } from "antd";
+import { ConfigProvider, theme } from "antd";
+import MainPage from "./pages/MainPage/MainPage";
 
 const App = () => (
   <ConfigProvider
     theme={{
       algorithm: theme.darkAlgorithm,
       token: {
-        colorPrimary: "#ececec",
-        borderRadius: 6,
-        colorBorder: "#ececec",
-        fontSize: 22,
-        fontFamily: "Satoshi",
+        colorPrimary: "var(--primary-text-color)",
+        borderRadius: "var(--border-radius-m)",
+        colorBorder: "var(--primary-text-color)",
+        fontSize: "var(--font-size-m)",
+        fontFamily: "var(--font)",
+        colorText: "var(--primary-text-color)",
       },
       components: {
         Button: {
-          defaultBg: "#ececec",
-          defaultColor: "#3c4043",
-          defaultHoverBg: "#dadce0",
-          defaultHoverColor: "#3c4043",
+          colorPrimary: "var(--secondary-color)",
+          colorText: "var(--primary-text-color)",
+          colorPrimaryHover: "#181818",
         },
       },
     }}

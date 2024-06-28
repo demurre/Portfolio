@@ -1,0 +1,35 @@
+:root {
+  --font: "Satoshi", sans-serif;
+  --primary-color: #212121;
+  --secondary-color: #181818d4;
+  --primary-text-color: #ececec;
+  --font-size-m: 22px;
+  --font-size-s: 16px;
+  --border-radius-m: 6px;
+  --padding-m: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+}
+
+a {
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  color: #ffffff73;
+  margin: 8px 0;
+}
+
+a:hover {
+  color: var(--primary-text-color);
+}

@@ -1,9 +1,9 @@
-.videoContent {
+.video_content {
   width: 100%;
   height: 100%;
 }
 
-.videoContentContainer {
+.video_content_container {
   width: 560px;
   height: 315px;
   display: flex;
@@ -15,7 +15,7 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .videoContentContainer {
+  .video_content_container {
     height: 218px;
     width: 100%;
   }

@@ -1,18 +1,11 @@
-.projects {
-  display: flex;
-  font-size: 22px;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-}
-
 .projectItem {
   display: flex;
   flex-direction: row;
-  background: #181818d4;
-  padding: 12px;
-  border-radius: 6px;
+  background: var(--secondary-color);
+  padding: var(--padding-m);
+  border-radius: var(--border-radius-m);
+  align-items: center;
+  justify-content: center;
   margin-top: 16px;
 }
 
@@ -21,8 +14,8 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  max-width: 30rem;
-  padding-top: 10px;
+  max-width: 480px;
+  align-items: center;
   margin-left: 10px;
 }
 

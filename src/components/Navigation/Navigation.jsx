@@ -1,5 +1,5 @@
+import styles from "./Navigation.module.css";
 import { CloseOutlined, MenuOutlined } from "@ant-design/icons";
-import "./Navigation.css";
 import { useEffect, useRef, useState } from "react";
 
 const Navigation = () => {
@@ -8,11 +8,11 @@ const Navigation = () => {
   const [activeSection, setActiveSection] = useState("#home");
 
   const showNavbar = () => {
-    navRef.current.classList.toggle("responsive_nav");
+    navRef.current.classList.toggle(styles.responsive_nav);
   };
 
   const hideNavbar = () => {
-    navRef.current.classList.remove("responsive_nav");
+    navRef.current.classList.remove(styles.responsive_nav);
   };
 
   const handleLinkClick = (section) => {
@@ -59,42 +59,46 @@ const Navigation = () => {
     <header>
       <nav ref={navRef}>
         {showNavButton && (
-          <button className="nav-btn" onClick={hideNavbar}>
-            <CloseOutlined style={{ fontSize: "22px", padding: "8px" }} />
+          <button className={styles.nav_btn} onClick={hideNavbar}>
+            <CloseOutlined
+              style={{ fontSize: "var(--font-size-m)", padding: "8px" }}
+            />
           </button>
         )}
         <a
           href="#hero"
-          className={activeSection === "#hero" ? "active" : ""}
+          className={activeSection === "#hero" ? styles.active : ""}
           onClick={() => handleLinkClick("#hero")}
         >
           Hero
         </a>
         <a
           href="#about"
-          className={activeSection === "#about" ? "active" : ""}
+          className={activeSection === "#about" ? styles.active : ""}
           onClick={() => handleLinkClick("#about")}
         >
           About
         </a>
         <a
           href="#projects"
-          className={activeSection === "#projects" ? "active" : ""}
+          className={activeSection === "#projects" ? styles.active : ""}
           onClick={() => handleLinkClick("#projects")}
         >
           Projects
         </a>
         <a
           href="#contact"
-          className={activeSection === "#contact" ? "active" : ""}
+          className={activeSection === "#contact" ? styles.active : ""}
           onClick={() => handleLinkClick("#contact")}
         >
           Contact
         </a>
       </nav>
       {showNavButton && (
-        <button className="nav-btn" onClick={showNavbar}>
-          <MenuOutlined style={{ fontSize: "22px", padding: "8px" }} />
+        <button className={styles.nav_btn} onClick={showNavbar}>
+          <MenuOutlined
+            style={{ fontSize: "var(--font-size-m)", padding: "8px" }}
+          />
         </button>
       )}
     </header>

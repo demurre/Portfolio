@@ -1,16 +1,15 @@
-.form-control {
+.form_control {
   width: 100%;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  font-weight: 400;
+  padding: 6px 12px;
+  font-size: var(--font-size-s);
   line-height: 1.5;
-  border-radius: 6px;
+  border-radius: var(--border-radius-m);
   background: none;
   outline: none;
-  color: #ececec;
+  color: var(--primary-text-color);
 }
 
-.label-input {
+.label_input {
   position: relative;
   display: flex;
   margin-top: 8px;
@@ -38,11 +37,11 @@ textarea {
   min-height: 40px;
 }
 
-.label-input input:focus ~ label,
-.label-input input:valid ~ label,
-.label-input textarea:valid ~ label,
-.label-input textarea:focus ~ label {
+.label_input input:focus ~ label,
+.label_input input:valid ~ label,
+.label_input textarea:valid ~ label,
+.label_input textarea:focus ~ label {
   top: 0;
-  font-size: 14px;
-  border-radius: 6px;
+  font-size: var(--font-size-s);
+  border-radius: var(--border-radius-m);
 }

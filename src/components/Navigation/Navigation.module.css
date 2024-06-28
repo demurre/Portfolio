@@ -1,8 +1,8 @@
 header {
-  padding: 20px;
+  padding: var(--padding-m);
   background: transparent;
   backdrop-filter: blur(10px);
-  background-color: #181818d4;
+  background-color: var(--secondary-color);
   position: fixed;
   top: 20px;
   right: 20px;
@@ -11,40 +11,26 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  font-size: 22px;
+  font-size: var(--font-size-m);
   z-index: 200;
-  border-radius: 6px;
+  border-radius: var(--border-radius-m);
 }
 
 nav {
   display: flex;
-  border-radius: 6px;
+  border-radius: var(--border-radius-m);
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  a {
-    margin: 0.5rem 0;
-    color: #ffffff73;
-    text-decoration: none;
-  }
+  gap: 10px;
 }
 
-a:hover {
-  color: #ececec;
-}
-
-a.active {
-  color: #ececec;
-}
-
-header .nav-btn {
+header .nav_btn {
   cursor: pointer;
   background: transparent;
   border: none;
   outline: none;
   visibility: hidden;
   opacity: 0;
-  font-size: 1.8rem;
 }
 
 header div,
@@ -53,15 +39,19 @@ nav {
   align-items: center;
 }
 
+.active {
+  color: var(--primary-text-color);
+}
+
 @media only screen and (max-width: 1024px) {
   header {
     padding: 0;
   }
 
-  header .nav-btn {
+  header .nav_btn {
     visibility: visible;
     opacity: 1;
-    color: #ececec;
+    color: var(--primary-text-color);
   }
 
   header nav {
@@ -81,6 +71,6 @@ nav {
   }
 
   nav a {
-    font-size: 1.5rem;
+    font-size: var(--font-size-m);
   }
 }

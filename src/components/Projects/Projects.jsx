@@ -1,6 +1,6 @@
-import "./Projects.css";
+import styles from "./Projects.module.css";
+import share from "../../pages/MainPage/MainPage.module.css";
 import VideoComponent from "../VideoComponent/VideoComponent";
-
 import { projects } from "../../assets/assets";
 import { ExportOutlined, GithubFilled } from "@ant-design/icons";
 
@@ -8,18 +8,17 @@ const Projects = () => {
   return (
     <>
       <h3>Projects</h3>
-
       {projects.map((project, index) => (
-        <div key={index} className="projectItem">
+        <div key={index} className={styles.projectItem}>
           <VideoComponent videoSource={project.preview} />
-          <div className="projectInfo">
+          <div className={styles.projectInfo}>
             <h3>{project.name}</h3>
             <p>{project.description}</p>
             <p>
               Tech Stack: <br />
               {project.stack.map((link, index) => (
                 <img
-                  className="skill-item"
+                  className={share.skill_item}
                   key={index}
                   src={link}
                   alt="Tech Stack"
