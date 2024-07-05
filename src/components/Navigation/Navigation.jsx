@@ -8,11 +8,11 @@ const Navigation = () => {
   const [activeSection, setActiveSection] = useState("#home");
 
   const showNavbar = () => {
-    navRef.current.classList.toggle(styles.responsive_nav);
+    navRef.current.classList.toggle(styles["responsive-nav"]);
   };
 
   const hideNavbar = () => {
-    navRef.current.classList.remove(styles.responsive_nav);
+    navRef.current.classList.remove(styles["responsive-nav"]);
   };
 
   const handleLinkClick = (section) => {
@@ -59,7 +59,7 @@ const Navigation = () => {
     <header>
       <nav ref={navRef}>
         {showNavButton && (
-          <button className={styles.nav_btn} onClick={hideNavbar}>
+          <button className={styles["nav-btn"]} onClick={hideNavbar}>
             <CloseOutlined
               style={{ fontSize: "var(--font-size-m)", padding: "8px" }}
             />
@@ -67,35 +67,35 @@ const Navigation = () => {
         )}
         <a
           href="#hero"
-          className={activeSection === "#hero" ? styles.active : ""}
+          className={activeSection === "#hero" ? styles["active"] : ""}
           onClick={() => handleLinkClick("#hero")}
         >
           Hero
         </a>
         <a
           href="#about"
-          className={activeSection === "#about" ? styles.active : ""}
+          className={activeSection === "#about" ? styles["active"] : ""}
           onClick={() => handleLinkClick("#about")}
         >
           About
         </a>
         <a
           href="#projects"
-          className={activeSection === "#projects" ? styles.active : ""}
+          className={activeSection === "#projects" ? styles["active"] : ""}
           onClick={() => handleLinkClick("#projects")}
         >
           Projects
         </a>
         <a
           href="#contact"
-          className={activeSection === "#contact" ? styles.active : ""}
+          className={activeSection === "#contact" ? styles["active"] : ""}
           onClick={() => handleLinkClick("#contact")}
         >
           Contact
         </a>
       </nav>
       {showNavButton && (
-        <button className={styles.nav_btn} onClick={showNavbar}>
+        <button className={styles["nav-btn"]} onClick={showNavbar}>
           <MenuOutlined
             style={{ fontSize: "var(--font-size-m)", padding: "8px" }}
           />

@@ -24,7 +24,7 @@ nav {
   gap: 10px;
 }
 
-header .nav_btn {
+header .nav-btn {
   cursor: pointer;
   background: transparent;
   border: none;
@@ -48,7 +48,7 @@ nav {
     padding: 0;
   }
 
-  header .nav_btn {
+  header .nav-btn {
     visibility: visible;
     opacity: 1;
     color: var(--primary-text-color);
@@ -66,7 +66,7 @@ nav {
     transition: 0.5s;
   }
 
-  header .responsive_nav {
+  header .responsive-nav {
     transform: translateX(-100vw);
   }
 

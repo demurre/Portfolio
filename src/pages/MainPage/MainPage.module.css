@@ -37,7 +37,7 @@
   padding: 10px;
 }
 
-.text_content {
+.text-content {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -51,9 +51,14 @@
   border: 3px solid var(--secondary-color);
 }
 
-.skill_item {
+.skill-item {
   border-radius: var(--border-radius-m);
   margin-right: 6px;
+}
+
+.download-button {
+  margin-top: 10px;
+  width: 200px;
 }
 
 @keyframes l1 {
@@ -72,5 +77,10 @@
   .content {
     flex-direction: column;
     text-align: center;
+  }
+
+  .text-content {
+    display: flex;
+    align-items: center;
   }
 }

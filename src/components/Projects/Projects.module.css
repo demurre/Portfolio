@@ -1,4 +1,4 @@
-.projectItem {
+.project-item {
   display: flex;
   flex-direction: row;
   background: var(--secondary-color);
@@ -9,7 +9,7 @@
   margin-top: 16px;
 }
 
-.projectInfo {
+.project-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,7 +20,7 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .projectItem {
+  .project-item {
     max-width: 100vw;
     display: flex;
     flex-wrap: wrap;

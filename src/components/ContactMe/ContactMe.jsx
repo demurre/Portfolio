@@ -23,9 +23,9 @@ const ContactMe = () => {
         name="name"
         rules={[{ required: true, message: "Please enter your name" }]}
       >
-        <div className={styles.label_input}>
+        <div className={styles["label-input"]}>
           <input
-            className={styles.form_control}
+            className={styles["form-control"]}
             id="name-input"
             type="text"
             required
@@ -38,9 +38,9 @@ const ContactMe = () => {
         name="email"
         rules={[{ required: true, message: "Please enter your email" }]}
       >
-        <div className={styles.label_input}>
+        <div className={styles["label-input"]}>
           <input
-            className={styles.form_control}
+            className={styles["form-control"]}
             type="email"
             id="email-input"
             required
@@ -53,9 +53,9 @@ const ContactMe = () => {
         name="subject"
         rules={[{ required: true, message: "Please enter the subject" }]}
       >
-        <div className={styles.label_input}>
+        <div className={styles["label-input"]}>
           <input
-            className={styles.form_control}
+            className={styles["form-control"]}
             type="text"
             id="subject-input"
             required
@@ -68,9 +68,9 @@ const ContactMe = () => {
         name="message"
         rules={[{ required: true, message: "Please enter your message" }]}
       >
-        <div className={styles.label_input}>
+        <div className={styles["label-input"]}>
           <textarea
-            className={styles.form_control}
+            className={styles["form-control"]}
             id="message-input"
             type="text"
             required

@@ -9,16 +9,16 @@ const Projects = () => {
     <>
       <h3>Projects</h3>
       {projects.map((project, index) => (
-        <div key={index} className={styles.projectItem}>
+        <div key={index} className={styles["project-item"]}>
           <VideoComponent videoSource={project.preview} />
-          <div className={styles.projectInfo}>
+          <div className={styles["project-info"]}>
             <h3>{project.name}</h3>
             <p>{project.description}</p>
             <p>
               Tech Stack: <br />
               {project.stack.map((link, index) => (
                 <img
-                  className={share.skill_item}
+                  className={share["skill-item"]}
                   key={index}
                   src={link}
                   alt="Tech Stack"

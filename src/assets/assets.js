@@ -1,5 +1,20 @@
 export const projects = [
   {
+    name: "Store",
+    description:
+      "Users auth and save with Supabase. Using Redux for storage products and work with them. Work with API, namely products from fakestoreapi.",
+    stack: [
+      "https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black",
+      "https://img.shields.io/badge/CSS3-1572B6.svg?style=for-the-badge&logo=CSS3&logoColor=white",
+      "https://img.shields.io/badge/Supabase-3FCF8E.svg?style=for-the-badge&logo=Supabase&logoColor=white",
+      "https://img.shields.io/badge/Redux-764ABC.svg?style=for-the-badge&logo=Redux&logoColor=white",
+    ],
+    code: "https://github.com/demurre/Store",
+    demo: "https://demurre-store.vercel.app/",
+    preview: "https://www.youtube.com/embed/72_ieYnEPsU?si=YcPZNIpLKFxICWFe",
+  },
+
+  {
     name: "NeonPeakChronicles",
     description:
       "CCG RogueLike web game in which the player interacts with objects and game memorises their actions.",
@@ -36,19 +51,6 @@ export const projects = [
     demo: "https://journal-on-react.vercel.app/",
     preview: "https://www.youtube.com/embed/VJMJ7k1jqhE?si=je7oYm9EP2SZgSGK",
   },
-
-  {
-    name: "MusicApp",
-    description:
-      "Tracks taken from AWS. App realises search function, a playbar where you can control the track time/volume, play/pause buttons.",
-    stack: [
-      "https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black",
-      "https://img.shields.io/badge/CSS3-1572B6.svg?style=for-the-badge&logo=CSS3&logoColor=white",
-    ],
-    code: "https://github.com/demurre/MusicApp",
-    demo: "https://music-app-demurre.vercel.app/",
-    preview: "https://www.youtube.com/embed/eHAntBeDOf8?si=m2e1ClIv2hHWeUph",
-  },
 ];
 
 export const skills = [
@@ -56,6 +58,7 @@ export const skills = [
   "https://img.shields.io/badge/CSS3-1572B6.svg?style=for-the-badge&logo=CSS3&logoColor=white",
   "https://img.shields.io/badge/Tailwind%20CSS-06B6D4.svg?style=for-the-badge&logo=Tailwind-CSS&logoColor=white",
   "https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black",
+  "https://img.shields.io/badge/TypeScript-3178C6.svg?style=for-the-badge&logo=TypeScript&logoColor=white",
   "https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black",
 ];
 

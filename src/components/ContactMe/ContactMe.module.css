@@ -1,4 +1,4 @@
-.form_control {
+.form-control {
   width: 100%;
   padding: 6px 12px;
   font-size: var(--font-size-s);
@@ -9,7 +9,7 @@
   color: var(--primary-text-color);
 }
 
-.label_input {
+.label-input {
   position: relative;
   display: flex;
   margin-top: 8px;
@@ -37,10 +37,10 @@ textarea {
   min-height: 40px;
 }
 
-.label_input input:focus ~ label,
-.label_input input:valid ~ label,
-.label_input textarea:valid ~ label,
-.label_input textarea:focus ~ label {
+.label-input input:focus ~ label,
+.label-input input:valid ~ label,
+.label-input textarea:valid ~ label,
+.label-input textarea:focus ~ label {
   top: 0;
   font-size: var(--font-size-s);
   border-radius: var(--border-radius-m);

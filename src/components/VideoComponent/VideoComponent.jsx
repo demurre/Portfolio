@@ -5,9 +5,9 @@ const VideoComponent = ({ videoSource }) => {
   const iframeRef = useRef();
 
   return (
-    <div className={styles.video_content_container}>
+    <div className={styles["video-content-container"]}>
       <iframe
-        className={styles.video_content}
+        className={styles["video-content"]}
         ref={iframeRef}
         src={videoSource}
         frameBorder="0"
