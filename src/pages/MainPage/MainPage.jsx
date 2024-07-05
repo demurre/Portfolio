@@ -27,7 +27,7 @@ const MainPage = () => {
             <Button
               type="primary"
               icon={<DownloadOutlined />}
-              href="/src/assets/CV_Drozdov.pdf"
+              href="/CV_Drozdov.pdf"
               download
               className={styles["download-button"]}
             >
