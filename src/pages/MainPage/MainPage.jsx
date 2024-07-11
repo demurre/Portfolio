@@ -59,10 +59,10 @@ const MainPage = () => {
             Ukrainian: Native <br /> English: B1
           </p>
           <h4>Tech Skills:</h4>
-          <div>
+          <div className={styles["skills"]}>
             {skills.map((skill, index) => (
               <img
-                className={styles["skill-item"]}
+                style={{ borderRadius: "var(--border-radius-m)" }}
                 key={index}
                 src={skill}
                 alt={`Skill ${index + 1}`}
@@ -70,10 +70,10 @@ const MainPage = () => {
             ))}
           </div>
           <h4>Tools:</h4>
-          <div>
+          <div className={styles["skills"]}>
             {tools.map((tool, index) => (
               <img
-                className={styles["skill-item"]}
+                style={{ borderRadius: "var(--border-radius-m)" }}
                 key={index}
                 src={tool}
                 alt={`Tool ${index + 1}`}
@@ -83,7 +83,7 @@ const MainPage = () => {
         </div>
       </section>
 
-      <section id="projects" className={styles["projects"]}>
+      <section id="projects" className={styles["main"]}>
         <Projects projects={projects} />
       </section>
 

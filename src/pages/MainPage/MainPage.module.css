@@ -28,13 +28,11 @@
   max-width: 600px;
 }
 
-.projects {
+.skills {
   display: flex;
-  font-size: 22px;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
 .text-content {
@@ -49,11 +47,6 @@
   border-radius: 50%;
   animation: l1 5s infinite ease-in-out;
   border: 3px solid var(--secondary-color);
-}
-
-.skill-item {
-  border-radius: var(--border-radius-m);
-  margin-right: 6px;
 }
 
 .download-button {
