@@ -11,7 +11,7 @@ export const projects = [
     ],
     code: "https://github.com/demurre/Store",
     demo: "https://demurre-store.vercel.app/",
-    preview: "https://www.youtube.com/embed/72_ieYnEPsU?si=YcPZNIpLKFxICWFe",
+    preview: "https://www.youtube.com/embed/KCWfXEY4G_0?si=MgaGCPiU31w3r0p5",
   },
 
   {
