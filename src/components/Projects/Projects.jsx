@@ -7,7 +7,7 @@ import { Carousel } from "antd";
 const Projects = () => {
   return (
     <div className={styles["project-wrapper"]}>
-      <Carousel autoplay draggable>
+      <Carousel autoplay draggable arrows className={styles["carousel"]}>
         {projects.map((project, index) => (
           <div key={index} className={styles["project-item"]}>
             <VideoComponent videoSource={project.preview} />

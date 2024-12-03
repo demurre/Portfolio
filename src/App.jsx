@@ -18,7 +18,10 @@ const App = () => (
           colorPrimary: "var(--secondary-color)",
           colorText: "var(--primary-text-color)",
           colorPrimaryHover: "#181818",
+          paddingBlock: "24px",
+          borderRadius: "var(--border-radius-m)",
         },
+        Carousel: {},
       },
     }}
   >
