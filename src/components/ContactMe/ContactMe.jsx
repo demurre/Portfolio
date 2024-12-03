@@ -1,90 +1,22 @@
+import { GithubFilled, LinkedinFilled, MailFilled } from "@ant-design/icons";
 import styles from "./ContactMe.module.css";
-import { Button } from "antd";
-import { Form } from "antd";
-import { useForm } from "antd/es/form/Form";
 
 const ContactMe = () => {
-  const [form] = useForm();
-
-  const onFinish = (values) => {
-    const { name, email, subject, message } = values;
-    const bodyMessage = `Name: ${name} Email: ${email} Message: ${message}`;
-    const mailtoLink = `mailto:y.drozdov130705@gmail.com?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(bodyMessage)}`;
-    window.location.href = mailtoLink;
-  };
-
   return (
-    <Form form={form} onFinish={onFinish}>
-      <h3>Contact Me</h3>
-
-      <Form.Item
-        name="name"
-        rules={[{ required: true, message: "Please enter your name" }]}
-      >
-        <div className={styles["label-input"]}>
-          <input
-            className={styles["form-control"]}
-            id="name-input"
-            type="text"
-            required
-          />
-          <label htmlFor="name_input">Name</label>
-        </div>
-      </Form.Item>
-
-      <Form.Item
-        name="email"
-        rules={[{ required: true, message: "Please enter your email" }]}
-      >
-        <div className={styles["label-input"]}>
-          <input
-            className={styles["form-control"]}
-            type="email"
-            id="email-input"
-            required
-          />
-          <label htmlFor="email-input">Email</label>
-        </div>
-      </Form.Item>
-
-      <Form.Item
-        name="subject"
-        rules={[{ required: true, message: "Please enter the subject" }]}
-      >
-        <div className={styles["label-input"]}>
-          <input
-            className={styles["form-control"]}
-            type="text"
-            id="subject-input"
-            required
-          />
-          <label htmlFor="subject-input">Subject</label>
-        </div>
-      </Form.Item>
-
-      <Form.Item
-        name="message"
-        rules={[{ required: true, message: "Please enter your message" }]}
-      >
-        <div className={styles["label-input"]}>
-          <textarea
-            className={styles["form-control"]}
-            id="message-input"
-            type="text"
-            required
-          />
-          <label htmlFor="message-input">Message</label>
-        </div>
-      </Form.Item>
-
-      <Form.Item>
-        <Button type="primary" htmlType="submit" block>
-          Send
-        </Button>
-      </Form.Item>
-    </Form>
+    <div className={styles["contact-me"]}>
+      <h3>Contact me</h3>
+      <span>
+        <a href="https://www.linkedin.com/in/yaroslav-drozdov-26402928a/">
+          <LinkedinFilled style={{ fontSize: "30px" }} />
+        </a>
+        <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=y.drozdov130705@gmail.com">
+          <MailFilled style={{ fontSize: "30px", padding: "4px" }} />
+        </a>
+        <a href="https://github.com/demurre">
+          <GithubFilled style={{ fontSize: "30px", padding: "4px" }} />
+        </a>
+      </span>
+    </div>
   );
 };
 

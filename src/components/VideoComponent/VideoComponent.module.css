@@ -4,8 +4,8 @@
 }
 
 .video-content-container {
-  width: 560px;
-  height: 315px;
+  width: 600px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -14,9 +14,9 @@
   align-content: center;
 }
 
-@media only screen and (max-width: 1024px) {
+@media (max-width: 768px) {
   .video-content-container {
-    height: 218px;
+    height: 100%;
     width: 100%;
   }
 }

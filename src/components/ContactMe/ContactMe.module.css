@@ -1,47 +1,18 @@
-.form-control {
-  width: 100%;
-  padding: 6px 12px;
-  font-size: var(--font-size-s);
-  line-height: 1.5;
-  border-radius: var(--border-radius-m);
-  background: none;
-  outline: none;
-  color: var(--primary-text-color);
-}
-
-.label-input {
-  position: relative;
+.contact-me {
   display: flex;
-  margin-top: 8px;
-  textarea + label {
-    top: 20px;
-  }
-}
-
-label {
-  position: absolute;
-  top: 50%;
-  left: 8px;
-  transform: translateY(-50%);
-  padding: 0 5px;
-  transition: all 0.2s ease-in-out;
-  background-color: #212121;
-  cursor: text;
-  user-select: none;
-}
-
-textarea {
-  overflow: auto;
-  resize: vertical;
-  max-height: 200px;
-  min-height: 40px;
-}
-
-.label-input input:focus ~ label,
-.label-input input:valid ~ label,
-.label-input textarea:valid ~ label,
-.label-input textarea:focus ~ label {
-  top: 0;
-  font-size: var(--font-size-s);
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  background: var(--secondary-color);
+  padding: var(--padding-m);
   border-radius: var(--border-radius-m);
+  width: 70%;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .contact-me {
+    width: 90%;
+  }
 }
