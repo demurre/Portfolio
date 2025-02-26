@@ -11,7 +11,7 @@ export const projects = [
     ],
     code: "https://github.com/demurre/Store",
     demo: "https://demurre-store.vercel.app/",
-    preview: "https://www.youtube.com/embed/KCWfXEY4G_0?si=MgaGCPiU31w3r0p5",
+    preview: "https://www.youtube.com/embed/J6E3UoKfk7s?si=KCGd-O-RsS6cmFiz",
   },
 
   {
@@ -60,6 +60,8 @@ export const skills = [
   "https://img.shields.io/badge/JavaScript-212121.svg?style=for-the-badge&logo=JavaScript&logoColor=white",
   "https://img.shields.io/badge/TypeScript-212121.svg?style=for-the-badge&logo=TypeScript&logoColor=white",
   "https://img.shields.io/badge/React-212121.svg?style=for-the-badge&logo=React&logoColor=white",
+  "https://img.shields.io/badge/Jest-212121.svg?style=for-the-badge&logo=Jest&logoColor=white",
+  "https://img.shields.io/badge/Testing%20Library-212121.svg?style=for-the-badge&logo=Testing-Library&logoColor=white",
 ];
 
 export const tools = [
@@ -70,6 +72,10 @@ export const tools = [
   "https://img.shields.io/badge/Ant%20Design-212121.svg?style=for-the-badge&logo=Ant-Design&logoColor=white",
   "https://img.shields.io/badge/Vercel-212121.svg?style=for-the-badge&logo=Vercel&logoColor=white",
   "https://img.shields.io/badge/Vite-212121.svg?style=for-the-badge&logo=Vite&logoColor=white",
+  "https://img.shields.io/badge/npm-212121.svg?style=for-the-badge&logo=npm&logoColor=white",
+  "https://img.shields.io/badge/pnpm-212121.svg?style=for-the-badge&logo=pnpm&logoColor=white",
+  "https://img.shields.io/badge/Yarn-212121.svg?style=for-the-badge&logo=Yarn&logoColor=white",
+  "https://img.shields.io/badge/Cypress-212121.svg?style=for-the-badge&logo=Cypress&logoColor=white",
 ];
 
 export default { projects, skills, tools };

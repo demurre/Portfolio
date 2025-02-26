@@ -30,6 +30,7 @@ const Projects = () => {
                   href={project.code}
                   target="_blank"
                   rel="noopener noreferrer"
+                  tabIndex="-1"
                 >
                   Code <GithubFilled />
                 </a>
@@ -38,6 +39,7 @@ const Projects = () => {
                   href={project.demo}
                   target="_blank"
                   rel="noopener noreferrer"
+                  tabIndex="-1"
                 >
                   Demo <ExportOutlined />
                 </a>

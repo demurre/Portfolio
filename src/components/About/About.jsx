@@ -8,18 +8,18 @@ const About = () => {
   return (
     <div className={styles["about-wrapper"]}>
       <div className={styles["about"]}>
-        <h3>About me</h3>
+        <h1>About me</h1>
         <p>
-          I&apos;m Yarik - React Frontend Developer, currently studying in
-          Dnipro University of Technology. Have experience with crafting UI
-          mockups in Figma and develop them. Look forward to gaining more
-          experience and improving my skills!
+          I&apos;m Yarik - React Frontend Developer/QA, currently a student.
+          Have experience in crowdtesting on TestIo and with crafting UI mockups
+          in Figma and developing them. Look forward to gaining more experience
+          and improving my skills!
         </p>
-        <h4>Languages:</h4>
+        <h2>Languages:</h2>
         <p>
           Ukrainian: Native <br /> English: B1
         </p>
-        <h4>Tech Skills:</h4>
+        <h2>Tech Skills:</h2>
         <div className={styles["skills"]}>
           {skills.map((skill, index) => (
             <img
@@ -30,7 +30,7 @@ const About = () => {
             />
           ))}
         </div>
-        <h4>Tools:</h4>
+        <h2>Tools:</h2>
         <div className={styles["skills"]}>
           {tools.map((tool, index) => (
             <img
