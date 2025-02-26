@@ -43,6 +43,14 @@
   margin: 20px !important;
 }
 
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
 @media (max-width: 768px) {
   .about {
     margin-top: 20px;

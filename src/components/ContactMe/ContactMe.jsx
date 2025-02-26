@@ -4,7 +4,7 @@ import styles from "./ContactMe.module.css";
 const ContactMe = () => {
   return (
     <div className={styles["contact-me"]}>
-      <h3>Contact me</h3>
+      <h1>Contact me</h1>
       <span>
         <a href="https://www.linkedin.com/in/yaroslav-drozdov-26402928a/">
           <LinkedinFilled style={{ fontSize: "30px" }} />
