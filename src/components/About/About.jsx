@@ -25,8 +25,8 @@ const About = () => {
             <img
               style={{ borderRadius: "var(--border-radius-m)" }}
               key={index}
-              src={skill}
-              alt={`Skill ${index + 1}`}
+              src={skill.src}
+              alt={skill.alt}
             />
           ))}
         </div>
@@ -36,8 +36,8 @@ const About = () => {
             <img
               style={{ borderRadius: "var(--border-radius-m)" }}
               key={index}
-              src={tool}
-              alt={`Tool ${index + 1}`}
+              src={tool.src}
+              alt={tool.alt}
             />
           ))}
         </div>

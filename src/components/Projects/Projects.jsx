@@ -16,12 +16,12 @@ const Projects = () => {
               <p>{project.description}</p>
               <p>Tech Stack:</p>
               <div className={styles["tech-stack"]}>
-                {project.stack.map((link, index) => (
+                {project.stack.map((stackItem, index) => (
                   <img
                     style={{ borderRadius: "var(--border-radius-m)" }}
                     key={index}
-                    src={link}
-                    alt="Tech Stack"
+                    src={stackItem.src}
+                    alt={stackItem.alt}
                   />
                 ))}
               </div>
