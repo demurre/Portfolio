@@ -20,6 +20,10 @@ export const projects = [
         src: "https://img.shields.io/badge/Redux-212121.svg?style=for-the-badge&logo=Redux&logoColor=white",
         alt: "Redux",
       },
+      {
+        src: "https://img.shields.io/badge/Cypress-212121.svg?style=for-the-badge&logo=Cypress&logoColor=white",
+        alt: "Cypress",
+      },
     ],
     code: "https://github.com/demurre/Store",
     demo: "https://demurre-store.vercel.app/",
@@ -72,6 +76,10 @@ export const projects = [
       {
         src: "https://img.shields.io/badge/CSS3-212121.svg?style=for-the-badge&logo=CSS3&logoColor=white",
         alt: "CSS3",
+      },
+      {
+        src: "https://img.shields.io/badge/Cypress-212121.svg?style=for-the-badge&logo=Cypress&logoColor=white",
+        alt: "Cypress",
       },
     ],
     code: "https://github.com/demurre/Journal",
@@ -163,6 +171,10 @@ export const tools = [
   {
     src: "https://img.shields.io/badge/Cypress-212121.svg?style=for-the-badge&logo=Cypress&logoColor=white",
     alt: "Cypress",
+  },
+  {
+    src: "https://img.shields.io/badge/Postman-212121.svg?style=for-the-badge&logo=Postman&logoColor=white",
+    alt: "Postman",
   },
 ];
 
