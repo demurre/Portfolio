@@ -114,6 +114,10 @@ export const skills = [
     alt: "React",
   },
   {
+    src: "https://img.shields.io/badge/Cypress-212121.svg?style=for-the-badge&logo=Cypress&logoColor=white",
+    alt: "Cypress",
+  },
+  {
     src: "https://img.shields.io/badge/Jest-212121.svg?style=for-the-badge&logo=Jest&logoColor=white",
     alt: "Jest",
   },
@@ -137,6 +141,10 @@ export const tools = [
     alt: "GitHub",
   },
   {
+    src: "https://img.shields.io/badge/GitHub%20Actions-212121.svg?style=for-the-badge&logo=GitHub-Actions&logoColor=white",
+    alt: "GitHub Actions",
+  },
+  {
     src: "https://img.shields.io/badge/Figma-212121.svg?style=for-the-badge&logo=Figma&logoColor=white",
     alt: "Figma",
   },
@@ -157,6 +165,18 @@ export const tools = [
     alt: "Vite",
   },
   {
+    src: "https://img.shields.io/badge/Postman-212121.svg?style=for-the-badge&logo=Postman&logoColor=white",
+    alt: "Postman",
+  },
+  {
+    src: "https://img.shields.io/badge/Apache%20JMeter-212121.svg?style=for-the-badge&logo=Apache-JMeter&logoColor=white",
+    alt: "JMeter",
+  },
+  {
+    src: "https://img.shields.io/badge/Docker-212121.svg?style=for-the-badge&logo=Docker&logoColor=white",
+    alt: "Docker",
+  },
+  {
     src: "https://img.shields.io/badge/npm-212121.svg?style=for-the-badge&logo=npm&logoColor=white",
     alt: "npm",
   },
@@ -167,14 +187,6 @@ export const tools = [
   {
     src: "https://img.shields.io/badge/Yarn-212121.svg?style=for-the-badge&logo=Yarn&logoColor=white",
     alt: "Yarn",
-  },
-  {
-    src: "https://img.shields.io/badge/Cypress-212121.svg?style=for-the-badge&logo=Cypress&logoColor=white",
-    alt: "Cypress",
-  },
-  {
-    src: "https://img.shields.io/badge/Postman-212121.svg?style=for-the-badge&logo=Postman&logoColor=white",
-    alt: "Postman",
   },
 ];
 

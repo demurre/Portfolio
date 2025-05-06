@@ -46,7 +46,7 @@ const About = () => {
       <Button
         type="primary"
         icon={<DownloadOutlined />}
-        href="/CV_Yaroslav_Drozdov.pdf"
+        href="/CV_EN_Drozdov.pdf"
         download
         className={styles["download-button"]}
       >
