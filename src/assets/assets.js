@@ -173,8 +173,20 @@ export const tools = [
     alt: "JMeter",
   },
   {
+    src: "https://img.shields.io/badge/Swagger-212121.svg?style=for-the-badge&logo=Swagger&logoColor=white",
+    alt: "Swagger",
+  },
+  {
     src: "https://img.shields.io/badge/Docker-212121.svg?style=for-the-badge&logo=Docker&logoColor=white",
     alt: "Docker",
+  },
+  {
+    src: "https://img.shields.io/badge/Jira-212121.svg?style=for-the-badge&logo=Jira&logoColor=white",
+    alt: "Jira",
+  },
+  {
+    src: "https://img.shields.io/badge/TestRail-212121.svg?style=for-the-badge&logo=TestRail&logoColor=white",
+    alt: "TestRail",
   },
   {
     src: "https://img.shields.io/badge/npm-212121.svg?style=for-the-badge&logo=npm&logoColor=white",
