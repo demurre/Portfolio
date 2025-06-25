@@ -90,6 +90,14 @@ export const projects = [
 
 export const skills = [
   {
+    src: "https://img.shields.io/badge/Cypress-212121.svg?style=for-the-badge&logo=Cypress&logoColor=white",
+    alt: "Cypress",
+  },
+  {
+    src: "https://img.shields.io/badge/Playwright-212121.svg?style=for-the-badge&logo=Playwright&logoColor=white",
+    alt: "Playwright",
+  },
+  {
     src: "https://img.shields.io/badge/HTML5-212121.svg?style=for-the-badge&logo=HTML5&logoColor=white",
     alt: "HTML5",
   },
@@ -100,6 +108,10 @@ export const skills = [
   {
     src: "https://img.shields.io/badge/Tailwind%20CSS-212121.svg?style=for-the-badge&logo=Tailwind-CSS&logoColor=white",
     alt: "Tailwind CSS",
+  },
+  {
+    src: "https://img.shields.io/badge/MySQL-212121.svg?style=for-the-badge&logo=MySQL&logoColor=white",
+    alt: "MySql",
   },
   {
     src: "https://img.shields.io/badge/JavaScript-212121.svg?style=for-the-badge&logo=JavaScript&logoColor=white",
@@ -113,10 +125,7 @@ export const skills = [
     src: "https://img.shields.io/badge/React-212121.svg?style=for-the-badge&logo=React&logoColor=white",
     alt: "React",
   },
-  {
-    src: "https://img.shields.io/badge/Cypress-212121.svg?style=for-the-badge&logo=Cypress&logoColor=white",
-    alt: "Cypress",
-  },
+
   {
     src: "https://img.shields.io/badge/Jest-212121.svg?style=for-the-badge&logo=Jest&logoColor=white",
     alt: "Jest",
@@ -124,10 +133,6 @@ export const skills = [
   {
     src: "https://img.shields.io/badge/Testing%20Library-212121.svg?style=for-the-badge&logo=Testing-Library&logoColor=white",
     alt: "Testing Library",
-  },
-  {
-    src: "https://img.shields.io/badge/MySQL-212121.svg?style=for-the-badge&logo=MySQL&logoColor=white",
-    alt: "MySql",
   },
 ];
 
@@ -145,26 +150,6 @@ export const tools = [
     alt: "GitHub Actions",
   },
   {
-    src: "https://img.shields.io/badge/Figma-212121.svg?style=for-the-badge&logo=Figma&logoColor=white",
-    alt: "Figma",
-  },
-  {
-    src: "https://img.shields.io/badge/MUI-212121.svg?style=for-the-badge&logo=MUI&logoColor=white",
-    alt: "MUI",
-  },
-  {
-    src: "https://img.shields.io/badge/Ant%20Design-212121.svg?style=for-the-badge&logo=Ant-Design&logoColor=white",
-    alt: "Ant Design",
-  },
-  {
-    src: "https://img.shields.io/badge/Vercel-212121.svg?style=for-the-badge&logo=Vercel&logoColor=white",
-    alt: "Vercel",
-  },
-  {
-    src: "https://img.shields.io/badge/Vite-212121.svg?style=for-the-badge&logo=Vite&logoColor=white",
-    alt: "Vite",
-  },
-  {
     src: "https://img.shields.io/badge/Postman-212121.svg?style=for-the-badge&logo=Postman&logoColor=white",
     alt: "Postman",
   },
@@ -177,6 +162,20 @@ export const tools = [
     alt: "Swagger",
   },
   {
+    src: "https://img.shields.io/badge/Figma-212121.svg?style=for-the-badge&logo=Figma&logoColor=white",
+    alt: "Figma",
+  },
+
+  {
+    src: "https://img.shields.io/badge/Vercel-212121.svg?style=for-the-badge&logo=Vercel&logoColor=white",
+    alt: "Vercel",
+  },
+  {
+    src: "https://img.shields.io/badge/Vite-212121.svg?style=for-the-badge&logo=Vite&logoColor=white",
+    alt: "Vite",
+  },
+
+  {
     src: "https://img.shields.io/badge/Docker-212121.svg?style=for-the-badge&logo=Docker&logoColor=white",
     alt: "Docker",
   },
@@ -187,6 +186,14 @@ export const tools = [
   {
     src: "https://img.shields.io/badge/TestRail-212121.svg?style=for-the-badge&logo=TestRail&logoColor=white",
     alt: "TestRail",
+  },
+  {
+    src: "https://img.shields.io/badge/MUI-212121.svg?style=for-the-badge&logo=MUI&logoColor=white",
+    alt: "MUI",
+  },
+  {
+    src: "https://img.shields.io/badge/Ant%20Design-212121.svg?style=for-the-badge&logo=Ant-Design&logoColor=white",
+    alt: "Ant Design",
   },
   {
     src: "https://img.shields.io/badge/npm-212121.svg?style=for-the-badge&logo=npm&logoColor=white",

@@ -10,10 +10,11 @@ const About = () => {
       <div className={styles["about"]}>
         <h1>About me</h1>
         <p>
-          I&apos;m Yarik - QA/React Frontend Developer, currently a student.
-          Have experience in crowdtesting on TestIo and with crafting UI mockups
-          in Figma and developing them. Look forward to gaining more experience
-          and improving my skills!
+          I&apos;m Yarik - QA Manual/Automation. Have experience in crowdtesting
+          on TestIo and automation with Cypress/Playwright. I also have
+          experience as a React Frontend Developer with crafting UI mockups in
+          Figma and developing them. Look forward to gaining more experience and
+          improving my skills!
         </p>
         <h2>Languages:</h2>
         <p>
@@ -46,7 +47,7 @@ const About = () => {
       <Button
         type="primary"
         icon={<DownloadOutlined />}
-        href="/CV_EN_Drozdov.pdf"
+        href="/CV_Drozdov_QA.pdf"
         download
         className={styles["download-button"]}
       >

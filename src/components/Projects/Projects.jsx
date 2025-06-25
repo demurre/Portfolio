@@ -25,7 +25,7 @@ const Projects = () => {
                   />
                 ))}
               </div>
-              <p>
+              <p className={styles["project-links"]}>
                 <a
                   href={project.code}
                   target="_blank"
