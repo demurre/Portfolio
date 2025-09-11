@@ -3,6 +3,7 @@ import { skills, tools } from "../../assets/assets";
 import ContactMe from "../ContactMe/ContactMe";
 import { Button } from "antd";
 import { DownloadOutlined } from "@ant-design/icons";
+import BadgeList from "../BadgeList/BadgeList";
 
 const About = () => {
   return (
@@ -21,27 +22,9 @@ const About = () => {
           Ukrainian: Native <br /> English: B1
         </p>
         <h2>Tech Skills:</h2>
-        <div className={styles["skills"]}>
-          {skills.map((skill, index) => (
-            <img
-              style={{ borderRadius: "var(--border-radius-m)" }}
-              key={index}
-              src={skill.src}
-              alt={skill.alt}
-            />
-          ))}
-        </div>
+        <BadgeList items={skills} className={styles["skills"]} />
         <h2>Tools:</h2>
-        <div className={styles["skills"]}>
-          {tools.map((tool, index) => (
-            <img
-              style={{ borderRadius: "var(--border-radius-m)" }}
-              key={index}
-              src={tool.src}
-              alt={tool.alt}
-            />
-          ))}
-        </div>
+        <BadgeList items={tools} className={styles["skills"]} />
       </div>
       <ContactMe />
       <Button

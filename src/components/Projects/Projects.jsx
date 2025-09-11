@@ -3,6 +3,7 @@ import VideoComponent from "../VideoComponent/VideoComponent";
 import { projects } from "../../assets/assets";
 import { ExportOutlined, GithubFilled } from "@ant-design/icons";
 import { Carousel } from "antd";
+import BadgeList from "../BadgeList/BadgeList";
 
 const Projects = () => {
   return (
@@ -10,21 +11,15 @@ const Projects = () => {
       <Carousel autoplay draggable arrows className={styles["carousel"]}>
         {projects.map((project, index) => (
           <div key={index} className={styles["project-item"]}>
-            <VideoComponent videoSource={project.preview} />
+            <VideoComponent videoSource={project.preview} name={project.name} />
             <div className={styles["project-info"]}>
               <h3>{project.name}</h3>
               <p>{project.description}</p>
               <p>Tech Stack:</p>
-              <div className={styles["tech-stack"]}>
-                {project.stack.map((stackItem, index) => (
-                  <img
-                    style={{ borderRadius: "var(--border-radius-m)" }}
-                    key={index}
-                    src={stackItem.src}
-                    alt={stackItem.alt}
-                  />
-                ))}
-              </div>
+              <BadgeList
+                items={project.stack}
+                className={styles["tech-stack"]}
+              />
               <p className={styles["project-links"]}>
                 <a
                   href={project.code}
